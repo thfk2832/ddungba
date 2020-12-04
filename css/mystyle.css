@@ -1,0 +1,1170 @@
+@charset "UTF-8";
+/*폰트설정*/
+/*빙그레체 레귤러*/
+@font-face {
+    font-family: 'binggraeR';
+    src: url('fonts/BinggraeA1.eot');
+    src: url('fonts/BinggraeA1.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BinggraeA1.woff2') format('woff2'),
+        url('fonts/BinggraeA1.woff')
+          format('woff'),
+        url('fonts/BinggraeA1.ttf') format('truetype'),
+        url('fonts/BinggraeA1.svg#BinggraeA1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*빙그레체 볼드*/
+@font-face {
+    font-family: 'binggraeB';
+    src: url('fonts/Binggrae-BoldA1.eot');
+    src: url('fonts/Binggrae-BoldA1.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Binggrae-BoldA1.woff2') format('woff2'),
+        url('fonts/Binggrae-BoldA1.woff') format('woff'),
+        url('fonts/Binggrae-BoldA1.ttf') format('truetype'),
+        url('fonts/Binggrae-BoldA1.svg#Binggrae-BoldA1') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*{	margin: 0;
+	padding: 0;}
+ol li, ul li{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	/*overflow: hidden;*/
+}
+.center{
+	position: absolute;
+	left: 50%;
+}
+/*스크롤바 스타일*/
+body::-webkit-scrollbar{
+	width: 15px;
+	height: 0;
+	box-shadow: inset 0 0 5px gray; 
+}
+body::-webkit-scrollbar-thumb{
+	background-color: #0e7a48;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #1c3a6d;
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#wrapper>section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++네비게이션 gnb*/
+/*gnb 배경*/
+nav#gnb{
+	z-index: 999999999 !important;
+	width: 808px;
+	height: 180px;
+	background: url(img/nav/nav_bg.png) no-repeat;
+	background-position: 0 90px;
+	position: fixed;
+	bottom: 15px;
+	left: 40px;
+}
+/*gnb list*/
+nav#gnb li{
+	float: left;
+	width: 89px;
+	height: 33px;
+	top: 115px;
+	position: absolute;
+	box-sizing: border-box;
+	/*background-color: orange;*/
+	z-index: 999999999 !important;
+}
+nav#gnb a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 999999999 !important;
+	left: 0;
+	top: 0;
+}
+nav#gnb span{
+	text-indent: -9999999999px;
+	display: block;
+	background-color: pink;
+	position: absolute;
+	/*left:-100%;*/
+}
+nav#gnb div{
+	background: url(img/nav/home.png);
+	width: 145px;
+	height: 230px;
+	position: absolute;
+	top: -50px;
+	left: 50px;
+	animation: home 1.5s steps(8) infinite;
+}
+@keyframes home{
+	0%{}
+	100%{background-position: -1160px;}
+}
+/*----------------------------*/
+/*gnb list img*/
+/*1page story*/
+nav#gnb li:nth-child(1) a{
+	background: url(img/nav/01story.png) no-repeat;
+	background-size: contain;
+	left: 215px;
+}
+/*2page recipe*/
+nav#gnb li:nth-child(2) a{
+	background: url(img/nav/02recipe.png) no-repeat;
+	background-size: contain;
+	left: 330px;
+}
+/*3page menu*/
+nav#gnb li:nth-child(3) a{
+	background: url(img/nav/03menu.png) no-repeat;
+	background-size: contain;
+	left: 445px;
+}
+/*4page goods*/ 
+nav#gnb li:nth-child(4) a{
+	background: url(img/nav/04goods.png) no-repeat;
+	background-size: contain;
+	left: 550px;
+}
+/*5page event*/
+nav#gnb li:nth-child(5) a{
+	background: url(img/nav/05event.png) no-repeat;
+	background-size: contain;
+	left: 655px;
+}
+/*----------------------------*/
+/*gnb list hover*/
+/*1page story*/
+nav#gnb li:nth-child(1):hover a{
+	background: url(img/nav/01story_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*2page recipe*/
+nav#gnb li:nth-child(2):hover a{
+	background: url(img/nav/02recipe_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*3page menu*/
+nav#gnb li:nth-child(3):hover a{
+	background: url(img/nav/03menu_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*4page goods*/
+nav#gnb li:nth-child(4):hover a{
+	background: url(img/nav/04goods_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*5page event*/
+nav#gnb li:nth-child(5):hover a{
+	background: url(img/nav/05event_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+@keyframes hover{
+	0%{background-position:0}
+	100%{background-position: -440px;}
+}
+/*gnb list active(네비게이션 활성화)*/
+/*1page story*/
+nav#gnb li:nth-child(1).active_nav a{
+	background: url(img/nav/01story_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*2page recipe*/
+nav#gnb li:nth-child(2).active_nav a{
+	background: url(img/nav/02recipe_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*3page menu*/
+nav#gnb li:nth-child(3).active_nav a{
+	background: url(img/nav/03menu_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*4page goods*/
+nav#gnb li:nth-child(4).active_nav a{
+	background: url(img/nav/04goods_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*5page event*/
+nav#gnb li:nth-child(5).active_nav a{
+	background: url(img/nav/05event_on.png);
+	width: 88px;
+	height: 146px;
+	top: -113.4px;
+	animation: hover 1s steps(5) infinite;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++배경넣기*/
+/*1page story*/
+#wrapper>section:nth-of-type(1){
+	background: url(img/bg/bg1.png) no-repeat right fixed;
+}
+/*2page recipe*/
+#wrapper>section:nth-of-type(2){
+	background: url(img/bg/bg2.png) no-repeat right fixed;
+}
+/*3page menu*/
+#wrapper>section:nth-of-type(3){
+	background: url(img/bg/bg3.png) no-repeat right fixed;
+}
+/*4page goods*/
+#wrapper>section:nth-of-type(4){
+	background: url(img/bg/bg4.png) no-repeat right fixed;
+}
+/*5page event*/
+#wrapper>section:nth-of-type(5){
+	background: url(img/bg/bg5.png) no-repeat right fixed;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++각종페이지 구조물*/
+/*1page story*/
+/*title img*/
+.title_img{
+	width: 553px;
+	height: 126px;
+	background: url(img/01_main/title.png);
+	position: absolute;
+	left: 7%;
+	top: 190px;
+	animation: animate__slideInDown 1s;
+}
+/*바나나캐릭터*/
+.banana{
+	width: 105px;
+	height: 100px;
+	background: url(img/01_main/banana.png) no-repeat;
+	top: 100px;
+	margin-left: 45%;
+	animation: banana 1s infinite;
+}
+@keyframes banana{
+	0%{top: 76px;}
+	50%{top: 80px;}
+	100%{top: 76px;}
+}
+/*내용*/
+#story_carousel{
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	left: 11%;
+	top: 350px;
+	overflow: hidden;
+}
+#story_carousel ol.stories{
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	top: 25px;
+}
+#story_carousel ol.stories li{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#story_carousel ol.stories li:nth-child(2){
+	left: 100%;
+}
+/*내용 스타일*/
+#story_carousel ol.stories h1{
+	font-family: binggraeB;
+	color: #ffe259;
+	font-size: 1.8em;
+}
+#story_carousel ol.stories p{
+	font-family: binggraeR;
+	color: white;
+	font-size: 16px;
+}
+#story_carousel ol.stories span{
+	font-family: binggraeB;
+	font-size: 1.2em;
+}
+/*캐로셀 버튼*/
+#story_carousel ol.stories_btn{
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+#story_carousel ol.stories_btn li{
+	width: 12px;
+	height: 12px;
+	background-color: white;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+	box-shadow: 1.5px 1.5px darkgray;
+}
+/*크로샐 버튼 엑티브*/
+#story_carousel ol.stories_btn li.active_stories{
+	background-color: #ffe259;
+	box-shadow: 1.5px 1.5px #043a22;
+}
+/*sns*/
+/*인스타그램*/
+.fa-instagram, .fa-youtube{
+	position: absolute;
+	transition: transform 0.5s;
+	left: 4px;
+}
+.fa-instagram{
+	font-size: 2em;
+	color: #f6f6f6;
+	top: 165px;
+}
+/*유튜브*/
+.fa-youtube{
+	font-size: 2.2em;
+	color: #f6f6f6;
+	top: 163px;
+	left: 6%;
+}
+/*sns hover*/
+.fa-instagram:hover, .fa-youtube:hover{
+	color: #ff8282;
+	transform: rotate(15deg);
+}
+/*----------------------------*/
+/*2page recipe*/
+.modi_tag{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.modi_tag ul{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+.modi_tag li{
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	top: 0;
+}
+.modi_tag a{
+	display: block;
+	position: absolute;
+	z-index: 99999999 !important;
+	cursor: url(img/click.png),auto;
+}
+/*a태그 사이즈 및 위치*/
+.modi_tag li:nth-of-type(1) a{
+	width: 250px;
+	height: 250px;
+	top: 325px;
+	left: 50px;
+	border-radius: 300px;
+}
+.modi_tag li:nth-of-type(2) a{
+	width: 250px;
+	height: 250px;
+	top: 490px;
+	left: 35px;
+	border-radius: 300px;
+}
+.modi_tag li:nth-of-type(3) a{
+	width: 240px;
+	height: 250px;
+	top: 300px;
+	left: 30px;
+}
+.modi_tag li:nth-of-type(4) a{
+	width: 230px;
+	height: 230px;
+	top: 480px;
+	left: 45px;
+	transform: rotate(-5.5deg);
+}
+.modi_tag span{
+	text-indent: -999999999999999999999999px;
+	display: block;
+	position: absolute;
+}
+/*tag img*/
+/*move tag*/
+.modi_tag li:nth-child(1){
+	width: 350px;
+	height: 100%;
+	background: url(img/02_modi/movie.png) no-repeat;
+	background-position: cover;
+	left: 20px;
+	top: 0;
+	animation: movetag 1.5s infinite;
+}
+@keyframes movetag{
+	0%{top: -20px;}
+	50%{top: 0;}
+	100%{top: -20px;}
+}
+/*ice cream tag*/
+.modi_tag li:nth-child(2){
+	width: 320px;
+	height: 100%;
+	background: url(img/02_modi/ice_cream.png) no-repeat;
+	background-position: cover;
+	left: -90px;
+	top: 0;
+	animation: icecreamtag 1.5s infinite;
+}
+@keyframes icecreamtag{
+	0%{top: -40px;}
+	50%{top: 0;}
+	100%{top: -40px;}
+}
+/*drink tag*/
+.modi_tag li:nth-child(3){
+	width: 300px;
+	height: 100%;
+	background: url(img/02_modi/drink.png) no-repeat;
+	background-position: cover;
+	left: -180px;
+	top: 0;
+	animation: drinktag 1.5s infinite;
+}
+@keyframes drinktag{
+	0%{top: -20px;}
+	50%{top: 0;}
+	100%{top: -20px;}
+}
+/*bakrey tag*/
+.modi_tag li:nth-child(4){
+	width: 314px;
+	height: 100%;
+	background: url(img/02_modi/bakrey.png) no-repeat;
+	background-position: cover;
+	left: -230px;
+	top: 0;
+	animation: bakreytag 1.5s infinite;
+}
+@keyframes bakreytag{
+	0%{top: -40px;}
+	50%{top: 0;}
+	100%{top: -40px;}
+}
+/*모디슈머 모달창*/
+.modi_modal{
+	width: 612px;
+	height: 600px;
+	margin-left: -650px;
+	top: 110px;
+	overflow: scroll;
+	z-index: 9999999999;
+}
+.modi_modal::-webkit-scrollbar{
+	width: 12px;
+	height: 0;
+}
+.modi_modal::-webkit-scrollbar-thumb{
+	background-color: #046eaa;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #1c3a6d;
+}
+.modi_modal div{
+	width: 600px;
+	height: 100%;
+	position: absolute;
+}
+.modi_modal div:nth-child(1){
+	background: url(img/02_modi/modal/movie_modal.png);
+	height: 83%;
+}
+.modi_modal div:nth-child(1) iframe{
+	position: absolute;
+	left: 3.2%;
+	bottom: 25px;
+}
+.modi_modal div:nth-child(2){
+	background: url(img/02_modi/modal/icecream_modal.png);
+}
+.modi_modal div:nth-child(3){
+	height: 700px;
+	background: url(img/02_modi/modal/drink_modal.png);
+}
+.modi_modal div:nth-child(4){
+	height: 1640px;
+	background: url(img/02_modi/modal/bakrey_modal.png);
+}
+/*검은배경*/
+.blackBg_2page{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	opacity: 0.9;
+	z-index: 999999999;
+}
+/*close button*/
+#recipe_page02 .fa-times-circle{
+	font-size: 2em;
+	margin-left: -95px;
+	top: 70px;
+	color: lightgray;
+	cursor: pointer;
+	z-index: 999999999;
+}
+/*태그클릭멘트*/
+.waterdrop{
+	width: 270px;
+	height: 277.56px;
+	background: url(img/02_modi/waterdrop1.png) no-repeat;
+	animation: waterdrop 1s steps(4) infinite;
+	margin-left: 30px;
+	top: 60px;
+}
+@keyframes waterdrop{
+	0%{}
+	100%{background-position: -1080px;}
+}
+/*----------------------------*/
+/*3page series*/
+/*한정판시리즈*/
+/*"한정판 시리즈"푯말*/
+.sign{
+	width: 285px;
+	height: 227px;
+	background: url(img/03_series/sign.png) no-repeat center;
+	margin-left: -780px;
+	top: 0;
+}
+/*한정판시리즈 img*/
+.edition{
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	left: 50%;
+	margin-left: -800px;
+	top: 220px;
+	overflow: hidden;
+	box-shadow: 2px 2px 10px #4D4D4D;
+}
+.edition li{
+	float: left;
+	position: absolute;
+	box-sizing: border-box;
+	background-size: contain;
+}
+/*한정판시리즈 캐로셀 prev, next 버튼*/
+.edition .fas{
+	position: absolute;
+	font-size: 2em;
+	top: 44.5%;
+	color: white;
+	cursor: pointer;
+}
+.edition .fa-angle-left{
+	left: 5px;
+}
+.edition .fa-angle-right{
+	right: 5px;
+}
+/*귤맛*/
+.edition li{left:100%;}
+.edition li:nth-child(1){
+	width: 100%;
+	height: 100%;
+	background: url(img/03_series/edition/edition01.png) no-repeat;
+	left:0;
+}
+/*리치피치맛*/
+.edition li:nth-child(2){
+	width: 100%;
+	height: 100%;
+	background: url(img/03_series/edition/edition02.png) no-repeat;
+}
+/*오디맛*/
+.edition li:nth-child(3){
+	width: 100%;
+	height: 100%;
+	background: url(img/03_series/edition/edition03.png) no-repeat;
+}
+/*호박고구마맛*/
+.edition li:nth-child(4){
+	width: 100%;
+	height: 100%;
+	background: url(img/03_series/edition/edition04.png) no-repeat;
+}
+/*영양정보 click text*/
+.click_text{
+	font-family: binggraeR;
+	color: #0e7a48;
+	animation: click_text 2s infinite;
+	margin-top: -50px;
+	margin-left: 25%;
+}
+@keyframes click_text{
+	0%{}
+	50%{transform: scale(1.2);}
+	100%{}
+}
+.click_text span{
+	font-family: binggraeR;
+	color: #ffe259;
+	font-size: 20px;
+}
+/*영양정보 구조물*/
+/*쇼케이스*/
+.showcase{
+	width: 607px;
+	height: 654px;
+	background: url(img/03_series/showcase.png) no-repeat center;
+	margin-left: -420px;
+	bottom: 80px;
+}
+/*판매시리즈*/
+.information ul{
+	width: 458px;
+	height: 403px;
+	margin-left: -345px;
+	bottom: 200px;
+	overflow: hidden;
+}
+.information li{
+	width: 110px;
+	height: 140px;
+	float: left;
+	box-sizing: border-box;
+	margin: 35px 0 30px 3px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.information li:nth-child(1){
+	background: url(img/03_series/01_banana.png) center no-repeat;
+}
+.information li:nth-child(2){
+	background: url(img/03_series/02_bananalight.png) center no-repeat;
+}
+.information li:nth-child(3){
+	background: url(img/03_series/03_strawberry.png) center no-repeat;
+}
+.information li:nth-child(4){
+	background: url(img/03_series/04_vanilla.png) center no-repeat;
+}
+.information li:nth-child(5){
+	background: url(img/03_series/05_candybar.png) center no-repeat;
+	margin-left: 55px;
+}
+.information li:nth-child(6){
+	background: url(img/03_series/06_kids_banana.png) center no-repeat;
+}
+.information li:nth-child(7){
+	background: url(img/03_series/07_kids_cocoa.png) center no-repeat;
+}
+/*판매시리즈 호버*/
+.information li:hover{
+	animation: tada 1s infinite;
+}
+/*우유 영양정보 모달창*/
+.milk_modal{
+	width: 480px;
+	height: 530px;
+	bottom: 135px;
+	margin-left: 210px;
+	overflow:hidden;
+	z-index: 99;
+}
+.milk_modal>div{
+	width: 100%;
+	height: 480px;
+	position: absolute;
+	bottom: 0;
+}
+.milk_modal>div:nth-of-type(1){
+	background: url(img/03_series/modal/banana_modal.png) no-repeat;
+	left: 0;
+}
+.milk_modal>div:nth-of-type(2){
+	background: url(img/03_series/modal/bananalight_modal.png) no-repeat;
+}
+.milk_modal>div:nth-of-type(3){
+	background: url(img/03_series/modal/strawberry_modal.png) no-repeat;
+}
+.milk_modal>div:nth-of-type(4){
+	background: url(img/03_series/modal/vanilla_modal.png) no-repeat;
+}
+.milk_modal>div:nth-of-type(5){
+	background: url(img/03_series/modal/candybar_modal.png) no-repeat;
+}
+.milk_modal>div:nth-of-type(6){
+	background: url(img/03_series/modal/kids_banana_modal.png) no-repeat;
+}
+.milk_modal>div:nth-of-type(7){
+	background: url(img/03_series/modal/kids_cocoa_modal.png) no-repeat;
+}
+/*우유 영양정보 모달창 close 버튼*/
+.milk_modal .fa-times{
+	font-size: 1.5em;
+	top: 40px;
+	right: 40px;
+	position: absolute;
+	color: gray;
+	cursor: pointer;
+}
+/*모달창 주변 배경눌러도 닫아지게*/
+.bg_3page{
+	width: 700px;
+	height: 100%;
+	margin-left: 180px;
+}
+/*우유 영양정보 모달창 크로셀 버튼*/
+.milk_modal .fa-caret-square-left, .milk_modal .fa-caret-square-right{
+	font-size: 2em;
+	top: 10px;
+	color: #4f85d1;
+	cursor: pointer;
+}
+.milk_modal .fa-caret-square-left{
+	margin-left: -10%;
+}
+.milk_modal .fa-caret-square-right{
+	margin-left: 5%;
+}
+/*3page 캐릭터 애니메이션*/
+.cha_3p{
+	width: 268px;
+	height: 363px;
+	z-index: 99999999;
+	margin-left: -575px;
+	bottom: 70px;
+	background: url(img/ani/ani_03.png) no-repeat;
+	animation: cha3 1.2s steps(7) infinite;
+}
+@keyframes cha3{
+	0%{}
+	100%{background-position: -1876px;}
+}
+/*----------------------------*/
+/*4page goods*/
+/*벽 구조물*/
+/*굿즈종류 액자(img)*/
+.frame{
+	background: url(img/04_goods/frame.png);
+	width: 273px;
+	height: 273px;
+	top: 80px;
+	margin-left: -470px;
+}
+.frame div{
+	position: absolute;
+	top: 16.5px;
+	left: 16.5px;
+	width: 239px;
+	height: 239px;
+	background: url(img/04_goods/goods_menu/hat.jpg) no-repeat center;
+	background-size: contain;
+	box-shadow: inset -1px -1px 8px black;
+}
+/*굿즈종류 메뉴판(button)*/
+.menuboard{
+	background: url(img/04_goods/menuboard.png);
+	width: 247px;
+	height: 273px;
+	top: 80px;
+	margin-left: -170px;
+	z-index: 3;
+}
+.menuboard ul{
+	margin-top: 115px;
+}
+.menuboard li{
+	cursor: pointer;
+	line-height: 25px;
+	font-family: binggraeR;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+.menuboard li:hover{
+	font-family: binggraeB;
+	color: #f18a67;
+}
+.menuboard li.active_menuboard{
+	font-family: binggraeB;
+	color: #f18a67;
+}
+/*굿즈클릭 멘트*/
+.goods_click{
+	width: 202px;
+	height: 93px;
+	background: url(img/04_goods/menu_click.png);
+	margin-left: 100px;
+	top: 45px;
+	animation: goods 1s infinite;
+}
+@keyframes goods{
+	0%{top: 45px;}
+	50%{top: 50px;}
+	100%{top: 45px;}
+}
+/*음료수 장식장*/
+.drinking_water{
+	background: url(img/04_goods/drinking_water.png);
+	width: 200px;
+	height: 227px;
+	top: 100px;
+	margin-left: -700px;
+}
+/*카운터 테이블*/
+.counter{
+	width: 660px;
+	height: 500px;
+	background: url(img/04_goods/counter.png);
+	bottom: 110px;
+	position: absolute;
+	left: 150px;
+	z-index: 2;
+}
+/*분바스틱 클릭멘트*/
+.stick_click{
+	text-align: center;
+	font-family: binggraeR;
+	top: 90px;
+	margin-left: 165px;
+	animation: stick 1s infinite;
+}
+@keyframes stick{
+	0%{}
+	50%{top: 95px;}
+	100%{}
+}
+/*분바스틱*/
+.stick{
+	width: 155px;
+	height: 240px;
+	background: url(img/04_goods/stick.png);
+	top: 160px;
+	margin-left: 155px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.stick:hover{
+	transform: rotate(10deg)
+}
+/*분바스틱 모달창*/
+/*분바스틱 close 배경*/
+.bgStick_4page{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	opacity: 0.9;
+	z-index: 999999999;
+}
+/*휴대폰 이미지*/
+.stick_modal{
+	width: 397px;
+	height: 792px;
+	background: url(img/04_goods/modal/iphone.png) center;
+	margin-left: -198.5px;
+	top: 70px;
+	z-index: 9999999999;
+}
+/*분바스틱 뉴스내용*/
+.stick_news{
+	width: 352px;
+	height: 520px;
+	z-index: 99999999999;
+	margin-left: -176px;
+	top: 170px;
+	overflow: scroll;
+}
+.stick_news::-webkit-scrollbar{
+	/*display: none;*/
+	width: 5px;
+}
+.stick_news::-webkit-scrollbar-thumb{
+	background-color: lightgray;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #1c3a6d;
+}
+.stick_news li{
+	width: 100%;
+	height: 820px;
+	background: url(img/04_goods/modal/news.png);
+}
+/*모달창 안의 마우스 스크롤 이미지*/
+.phone_scroll{
+	width: 35px;
+	height: 70px;
+	background: url(img/mouse_scroll.png) no-repeat;
+	background-size: contain;
+	bottom: 35px;
+	margin-left: -17.5px;
+	animation: phone_scroll 1s infinite;
+}
+@keyframes phone_scroll{
+	0%{opacity: 0.5;}
+	50%{opacity: 0.8;}
+	100%{opacity: 0.5;}
+}
+/*분바스틱 모달창 close 버튼*/
+#goods_page04 .fa-times-circle{
+	font-size: 2.5em;
+	color: #575757;
+	z-index: 99999999999;
+	margin-left: 210px;
+	top: 80px;
+	cursor: pointer;
+}
+/*굿즈위치소개*/
+/*위치 클릭멘트*/
+.map{
+	text-align: center;
+	font-family: binggraeR;
+	top: 215px;
+	margin-left: -102px;
+	animation: map 1s infinite;
+}
+@keyframes map{
+	0%{}
+	50%{top: 220px;}
+	100%{}
+}
+/*판매팻말*/
+.goods{
+	width: 116px;
+	height: 36px;
+	background: url(img/04_goods/goods.png);
+	top: 265px;
+	margin-left: -130px;
+	cursor: pointer;
+}
+.goods:hover{
+	background: url(img/04_goods/goods_on.png);
+}
+/*굿즈위치소개 모달창(옐로우카페)*/
+.yellowcafe{
+	width: 751px;
+	height: 769px;
+	background: url(img/04_goods/modal/map.png);
+	top: 50px;
+	margin-left: -470px;
+	z-index: 9999999999;
+}
+.yellowcafe ul{
+	width: 100%;
+	height: 100%;
+}
+/*옐로우카페 모달창 주변 눌러도 닫히게*/
+.bgYellowcafe_4page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999999999;
+}
+/*굿즈판매위치소개 close버튼*/
+.yellowcafe .fa-window-close{
+	font-size: 40px;
+	position: absolute;
+	top: 60px;
+	right: 185px;
+	color: #4a4647;
+	cursor: pointer;
+}
+/*굿즈판매위치 모달창 안의 위치아이콘*/
+.yellowcafe li:nth-child(2){
+	width: 65px;
+	height: 82px;
+	border-radius: 50%;
+	background: url(img/04_goods/modal/place.png);
+	bottom: 280px;
+	margin-left: -130px;
+	cursor: pointer;
+	animation: place 1s infinite;
+}
+@keyframes place{
+	0%{bottom: 290px;}
+	50%{bottom: 280px;}
+	100%{bottom: 290px;}
+}
+/*굿즈판매위치 모달창 안의 위치아이콘-클릭 멘트*/
+.place_clickment{
+	font-family: binggraeB;
+	font-size: 20px;
+	bottom: 75px;
+	margin-left: -25px;
+}
+/*주소 및 연락처 text*/
+.place_text{
+	text-align: center;
+	font-size: 16.5px;
+	font-family: binggraeB;
+	bottom: 140px;
+	margin-left: -270px;
+	color: #5c5a56;
+}
+/*인사하는 캐릭터*/
+.cha_4p{
+	width: 230px;
+	height: 359px;
+	background: url(img/ani/ani_02.png);
+	animation: cha_4p 0.8s steps(4) infinite;
+	position: absolute;
+	left: 140px;
+	bottom: 200px;
+}
+@keyframes cha_4p{
+	0%{}
+	100%{background-position: -920px;}
+}
+/*----------------------------*/
+/*5page event*/
+/*title*/
+.event_text{
+	width: 460px;
+	height: 121px;
+	background: url(img/05_event/evnet_text.png);
+	margin-left: -460px;
+	top: 95px;
+}
+/*크로셀 배경*/
+.event{
+	width: 890px;
+	height: 490px;
+	background-color: #02275a;
+	margin-left: -700px;
+	top: 245px;
+}
+/*이벤트 크로셀 이미지*/
+.event .event_banner{
+	width: 860px;
+	height: 460px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	overflow: hidden;
+}
+.event .event_banner li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 100%;
+}
+.event .event_banner li:nth-of-type(1){
+	background: url(img/05_event/event01.png);
+	left: 0;
+}
+.event .event_banner li:nth-of-type(2){
+	background: url(img/05_event/event02.png);
+}
+.event .event_banner li:nth-of-type(3){
+	background-color: #EEEEEE;
+}
+/*이벤트 크로셀 버튼*/
+.event .event_banner_btn{
+	position: absolute;
+	bottom: 25px;
+	left: 43%;
+	z-index: 999999999999999999;
+}
+.event .event_banner_btn li{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+	box-shadow: 2px 2px darkgray;
+}
+/*이벤트 크로셀 버튼 엑티브*/
+.event .event_banner_btn li.active_event{
+	background-color: #4298e5;
+	box-shadow: 2px 2px #02275a;
+}
+/*응모분야 라디오 버튼*/
+.event_banner form{
+	font-family: binggraeB;
+	margin-left: -270px;
+	bottom: 75px;
+	color: white;
+}
+.url{
+	margin-left: 20px;
+	outline: none;
+}
+/*url 입력 후 응모하기 버튼*/
+.event_banner button{
+	font-family: binggraeB;
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	background-color: white;
+	border-radius: 20px;
+	outline: none;
+}
+/*캐릭터 애니메이션*/
+.cha_5p{
+	width: 237px;
+	height: 367px;
+	top: 450px;
+	margin-left: 30px;
+	background: url(img/ani/ani_01.png);
+	animation: cha_5p 1s steps(4) infinite;
+}
+@keyframes cha_5p{
+	0%{}
+	100%{background-position: -948px;}
+}
+/*캔디바 애니메이션*/
+.candybar_5p{
+	width: 65px;
+	height: 328px;
+	background: url(img/ani/candybar.png) no-repeat;
+	background-size: contain;
+	margin-left: -540px;
+	top: 30px;
+	animation: candybar 1s infinite;
+}
+@keyframes candybar{
+	0%{transform: rotate(-7deg);}
+	50%{transform: rotate(-12deg);}
+	100%{transform: rotate(-7deg);}
+}
+/*디바이스 장치가 최소 767px이고 최대 1500px일 때 :모니터 크기가 1500px이고 최대 959px이상일 때 ▶ 타블렛;*/
+/*@media screen and (min-width: 767px) and (max-width: 1500px){
+	
+}*/

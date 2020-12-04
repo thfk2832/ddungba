@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>20_빙그레 뚱바</title>
+	<!-- 제이쿼리 라이브러리 링크 -->
+	<script src="js/prefixfree.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- 아이콘 -->
+	<script src="https://kit.fontawesome.com/74035eb141.js" crossorigin="anonymous"></script>
+	<!-- 마우스휠에따라 스르륵 내려가게하는 제이쿼리 링크 -->
+	<script src="js/jquery.mousewheel.js"></script>
+	<!-- 파비콘 -->
+	<link rel="icon" href="css/img/favicon/favicon_48.png" sizes="48x48" type="image/png">
+	<link rel="icon" href="css/img/favicon/favicon_70.png" sizes="70x70" type="image/png">
+	<!-- css 연결 -->
+	<link rel="stylesheet" href="css/mystyle.css">
+	<!-- script 연결 -->
+	<script src="js/myscript.js"></script>
+	<!-- animate.css -->
+	<link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+	<div id="wrapper">
+		<!-- 01page 메인페이지 -->
+		<section id="story_page01">
+			<!-- 네비게이션 -->
+		 	<nav id="gnb">
+				<ul>
+					<li class="active_nav">
+						<a href="#story_page01">
+							<span>story</span>
+						</a>
+					</li>
+					<li>
+						<a href="#recipe_page02">
+							<span>recipe</span>
+						</a>
+					</li>
+					<li>
+						<a href="#menu_page03">
+							<span>menu</span>
+						</a>
+					</li>
+					<li>
+						<a href="#goods_page04">
+							<span>goods</span>
+						</a>
+					</li>
+					<li>
+						<a href="#event_page05">
+							<span>event</span>
+						</a>
+					</li>
+				</ul>
+				<div>
+					<a href="#story_page01">
+						<span>home</span>
+					</a>
+				</div>
+			</nav>
+			<!-- 타이틀이미지 -->
+			<div class="title_img animate__slideInDown">
+				<!-- 바나나캐릭터 -->
+				<div class="banana center"></div>
+			</div>
+			<div id="story_carousel">
+				<ol class="stories">
+					<li>
+						<h1>
+							뚱바는 왜 배불뚝이가 됐을까?
+						</h1>
+						<p>
+							바나나맛우유가 처음 출시될 무렵인 1970년대의 산업화시대에 농촌을 떠나 대도시로 온<br>
+							고달픈 도시 생활업자들이 고향을 떠올릴 수 있도록 넉넉한 항아리 모양으로 디자인 되었습니다. <br>
+							독특한 생김새로 인해 수류탄우유 등의 별명을 잔뜩 얻었지만, <br>
+							우리의 마음을 달래주기 위한 패키지 디자인이었다는 점을 꼭 기억해주세요.
+						</p>
+					</li>
+					<li>
+						<h1>
+							뚱바 수상 History
+						</h1>
+						<p>
+							2017's
+							: 대한민국광고대상 디자인부문(대상), 프로모션부문(대상), 디지털캠페인 전략(금상)
+						</p>
+						<p>
+							2017's
+							: World Branding Forum 주최 Brand of the Year 선정
+						</p>
+						<p>
+							2017's
+							: "제11회 대학생이 뽑은 좋은 광고" TV/바이럴부문(대상)
+						</p>
+						<p>
+							<span>
+							"10년 연속 브랜드 파워1위(KBPI)"
+							</span>
+						</p>
+					</li>
+				</ol>
+				<ol class="stories_btn">
+					<li class="active_stories"></li>
+					<li></li>
+				</ol>
+				<!-- SNS -->
+				<!-- 인스타그램 -->
+				<a href="https://www.instagram.com/binggraekorea/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<!-- 유튜브 -->
+				<a href="https://www.youtube.com/c/binggrae" target="_blank">
+					<i class="fab fa-youtube"></i>
+				</a>
+			</div>
+		</section>
+		<!-- 02page모디슈머페이지 -->
+		<section id="recipe_page02">
+			<!-- 태그 이미지 -->
+			<div>
+				<ul class="modi_tag">
+					<li><a href="#123"><span>movie</span></a></li>
+					<li><a href="#123"><span>ice_cream</span></a></li>
+					<li><a href="#123"><span>drink</span></a></li>
+					<li><a href="#123"><span>bakrey</span></a></li>
+				</ul>
+			</div>
+			<!-- 모디슈머 모달창 -->
+			<div class="modi_modal center">
+				<div>
+					<!-- 동영상 -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ZzB6XUFJaVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
+				</div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="blackBg_2page"></div>
+			<i class="fas fa-times-circle center"></i>
+			<!-- 태그 클릭멘트 -->
+			<div class="waterdrop center"></div>
+		</section>
+		<!-- 03page 다양한시리즈 페이지		 -->
+		<section id="menu_page03">
+			<!-- 한정판 시리즈푯말 -->
+			<div class="sign center"></div>
+			<!-- 한정판 시리즈 -->
+			<div class="edition">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<i class="fas fa-angle-left"></i>
+				<i class="fas fa-angle-right"></i>
+			</div>
+			<!-- ▽영양정보▽ -->
+			<!-- 쇼케이스 -->
+			<div class="showcase center">
+				<div class="click_text">
+					<span>뚱바를 클릭</span>하여 <span>영양정보</span>를 확인해보세요!
+				</div>
+			</div>
+			<!-- 우유들 -->
+			<div class="information">
+				<ul class="center tada">
+					<li>banana</li>
+					<li>bananalight</li>
+					<li>strawberry</li>
+					<li>vanilla</li>
+					<li>candybar</li>
+					<li>kids_banana</li>
+					<li>kids_cocoa</li>
+				</ul>
+			</div>
+			<!-- 우유 영양정보 모달창 -->
+			<div class="milk_modal center">
+				<!-- 바나나맛 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 바나나맛라이트 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 딸기맛 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 바닐라 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 캔디바 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 바나나맛 키즈 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 코코아맛 키즈 -->
+				<div><i class="fas fa-times"></i></div>
+				<!-- 영양정보 크로셀버튼 -->
+				<i class="fas fa-caret-square-left center"></i>
+				<i class="fas fa-caret-square-right center"></i>
+			</div>
+			<div class="bg_3page center"></div>
+			<!-- 캐릭터 애니메이션 -->
+			<div class="cha_3p center"></div>
+		</section>
+		<!-- 04page 굿즈소개 페이지 -->
+		<section id="goods_page04">
+			<!-- 배경구조물 -->
+			<!-- 굿즈소개 메뉴판 -->
+			<div class="menuboard center">
+				<ul>
+					<li class="active_menuboard">뚱바모자 15000원</li>
+					<li>바나나맛키링 9000원</li>
+					<li>귤맛키링 9000원</li>
+					<li>오디맛키링 9000원</li>
+					<li>마스킹테이프 5000원</li>
+				</ul>
+			</div>
+			<!-- 굿즈소개 이미지 -->
+			<div class="frame center">
+				<div></div>
+			</div>
+			<!-- 벽구조물_음료수 -->
+			<div class="drinking_water center"></div>
+			<!-- 굿즈클릭멘트 -->
+			<div class="goods_click center"></div>
+			<!-- 카운터 -->
+			<div class="counter">
+				<p class="stick_click center">분바스틱 뉴스보기 <br>▼</p>
+				<div class="stick center"></div>
+				<p class="map center">지도보기 <br>▼</p>
+				<div class="goods center"></div>
+			</div>
+			<!-- 분바스틱 모달창 -->
+			<div>
+				<div class="stick_modal center">
+					<ul class="stick_news center">
+						<li></li>
+					</ul>
+					<div class="phone_scroll center"></div>
+				</div>
+				<i class="far fa-times-circle center"></i>
+				<div class="bgStick_4page"></div>
+			</div>
+			<!-- 옐로우카페 모달창 -->
+			<div class="yellowcafe center">
+				<ul>
+					<li></li>
+					<li class="center">
+						<p class="place_clickment center">click</p>
+					</li>
+					<i class="fas fa-window-close"></i>
+				</ul>
+				<p class="place_text center">
+					제주 서귀포시 중문관광로 90 <br>
+					064-739-1140
+				</p>
+			</div>
+			<!-- 옐로우카페 모달창 배경눌러도 닫히기 -->
+			<div class="bgYellowcafe_4page center"></div>
+			<!-- 인사하는 캐릭터 -->
+			<div class="cha_4p"></div>
+		</section>
+		<!-- 05page 이벤트페이지 -->
+		<section id="event_page05">
+			<!-- title -->
+			<div class="event_text center"></div>
+			<!-- 캔디바 캐릭터 -->
+			<div class="candybar_5p center"></div>
+			<!-- 이벤트 배너 -->
+			<div class="event center">
+				<ul class="event_banner">
+					<li></li>
+					<li>
+						<!-- 응모버튼 -->
+						<form class="center">
+							<label>
+								<input type="radio" name="area"> coffee
+							</label>
+							<label>
+								<input type="radio" name="area" checked> bakery & ice cream
+							</label>
+							<input type="text" placeholder="url을 적어주세요" class="url" required>
+							<input type="submit" name="submit" value="응모하기" class="btn_event">
+						</form>
+					</li>
+				</ul>
+				<!-- 이벤트배너 크로셀버튼 -->
+				<ul class="event_banner_btn">
+					<li class="active_event"></li>
+					<li></li>
+				</ul>
+			</div>
+			<!-- 캐릭터 -->
+			<div class="cha_5p center"></div>
+		</section>
+	</div>
+</body>
+</html>
